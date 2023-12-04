@@ -4,6 +4,7 @@ import 'package:hotelier/views/guide_1_page.dart';
 import 'package:hotelier/views/guide_2_page.dart';
 import 'package:hotelier/views/guide_3_page.dart';
 import 'package:hotelier/views/intro_page.dart';
+import 'package:hotelier/views/signup_page.dart';
 import 'package:hotelier/views/welcome_page.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       title: "Hotelier",
-      home: IntroPage(),
+      home:  IntroPage(),
       debugShowCheckedModeBanner: false,
     );
   }

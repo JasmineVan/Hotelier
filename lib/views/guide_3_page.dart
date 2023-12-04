@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hotelier/views/login_page.dart';
+import 'package:hotelier/views/signup_page.dart';
 
 class Guide3Page extends StatefulWidget {
   const Guide3Page({Key? key}) : super(key: key);
@@ -50,9 +50,9 @@ class _Guide3PageState extends State<Guide3Page> {
   }
 }
 void nextPage(){
-  Get.to(const LoginPage());
+  Get.to(const SignupPage());
 }
 
 void skipPage(){
-
+  Get.to(const SignupPage());
 }

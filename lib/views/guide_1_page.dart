@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hotelier/views/guide_2_page.dart';
+import 'package:hotelier/views/signup_page.dart';
 
 class Guild1Page extends StatefulWidget {
   const Guild1Page({Key? key}) : super(key: key);
@@ -108,5 +109,5 @@ void nextPage(){
 }
 
 void skipPage(){
-
+  Get.to(const SignupPage());
 }

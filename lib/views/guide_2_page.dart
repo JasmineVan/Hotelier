@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:get/get.dart';
 import 'package:hotelier/views/guide_3_page.dart';
+import 'package:hotelier/views/signup_page.dart';
 
 class Guide2Page extends StatefulWidget {
   const Guide2Page({Key? key}) : super(key: key);
@@ -31,7 +32,7 @@ class _Guide2PageState extends State<Guide2Page> {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Text(
-                "Let's have the best vacation with us",
+                "Welcome to a world of luxury and comfort.",
                 style: GoogleFonts.montserrat(
                     textStyle: const TextStyle(
                       fontWeight: FontWeight.bold,
@@ -75,7 +76,7 @@ class _Guide2PageState extends State<Guide2Page> {
                   width: maxWidth *2/3,
                   height: maxHeight / 16,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: skipPage,
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.transparent,
                       side: const BorderSide(color: Colors.red),
@@ -100,6 +101,6 @@ void nextPage(){
 }
 
 void skipPage(){
-
+  Get.to(const SignupPage());
 }
 
