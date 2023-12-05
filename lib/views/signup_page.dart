@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hotelier/views/signup_other_page.dart';
 
 class SignupPage extends StatefulWidget {
   const SignupPage({Key? key}) : super(key: key);
@@ -146,29 +148,46 @@ class _LoginPageState extends State<SignupPage> {
             ),
             Container(
               margin: EdgeInsets.only(top: maxHeight/80, bottom: maxHeight/80),
+              child: Row(
+                children: [
+                  Expanded(child: Container(
+                      margin: EdgeInsets.only(left: maxWidth/20, right: maxWidth/20),
+                      child: const Divider())),
+                  Text(
+                    "Or",
+                    style: GoogleFonts.montserrat(
+                        textStyle: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black,
+                          fontSize: 16.0,
+                        )),
+                    textAlign: TextAlign.center,
+                  ),
+                  Expanded(child: Container(
+                      margin: EdgeInsets.only(left: maxWidth/20, right: maxWidth/20),
+                      child: const Divider())),
+                ],
+              ),
+            ),
+            GestureDetector(
+              onTap: () => toOtherOptions(),
               child: Text(
-                "Or",
+                "More signup options",
                 style: GoogleFonts.montserrat(
                     textStyle: const TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black,
+                      color: Colors.blue,
                       fontSize: 16.0,
                     )),
                 textAlign: TextAlign.center,
               ),
-            ),
-            Text(
-              "More signup options",
-              style: GoogleFonts.montserrat(
-                  textStyle: const TextStyle(
-                    color: Colors.blue,
-                    fontSize: 16.0,
-                  )),
-              textAlign: TextAlign.center,
             ),
           ],
         ),
       ),
     );
   }
+}
+
+void toOtherOptions(){
+  Get.to(const SignupOtherPage());
 }
