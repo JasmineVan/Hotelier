@@ -4,6 +4,7 @@ import 'package:hotelier/views/guide_1_page.dart';
 import 'package:hotelier/views/guide_2_page.dart';
 import 'package:hotelier/views/guide_3_page.dart';
 import 'package:hotelier/views/intro_page.dart';
+import 'package:hotelier/views/login_page.dart';
 import 'package:hotelier/views/signup_other_page.dart';
 import 'package:hotelier/views/signup_page.dart';
 import 'package:hotelier/views/welcome_page.dart';

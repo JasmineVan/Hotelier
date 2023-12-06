@@ -3,6 +3,8 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hotelier/views/signup_other_page.dart';
 
+import 'login_page.dart';
+
 class SignupPage extends StatefulWidget {
   const SignupPage({Key? key}) : super(key: key);
 
@@ -146,6 +148,38 @@ class _LoginPageState extends State<SignupPage> {
                 ),
               ),
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Already have an account?",
+                  style: GoogleFonts.montserrat(
+                      textStyle: const TextStyle(
+                        // fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                        fontSize: 16.0,
+                      )),
+                  textAlign: TextAlign.center,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 8.0),
+                  child: GestureDetector(
+                    onTap: () => toSignIn(),
+                    child: Text(
+                      "Sign in",
+                      style: GoogleFonts.montserrat(
+                          textStyle: const TextStyle(
+                            fontStyle: FontStyle.italic,
+                            // fontWeight: FontWeight.bold,
+                            color: Colors.blue,
+                            fontSize: 16.0,
+                          )),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                ),
+              ],
+            ),
             Container(
               margin: EdgeInsets.only(top: maxHeight/80, bottom: maxHeight/80),
               child: Row(
@@ -190,4 +224,8 @@ class _LoginPageState extends State<SignupPage> {
 
 void toOtherOptions(){
   Get.to(const SignupOtherPage());
+}
+
+void toSignIn(){
+  Get.to(const LoginPage());
 }
