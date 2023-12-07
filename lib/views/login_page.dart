@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hotelier/views/forgot_password_page.dart';
 import 'package:hotelier/views/signup_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -85,7 +86,7 @@ class _LoginPagePageState extends State<LoginPage> {
                   child: Row(
                     children: [
                       Checkbox(
-                        shape: CircleBorder(),
+                        shape: const CircleBorder(),
                         value: true,
                         tristate: false,
                         onChanged: (value) {
@@ -109,7 +110,7 @@ class _LoginPagePageState extends State<LoginPage> {
                 Container(
                   margin: EdgeInsets.only(top: maxHeight/100, bottom: maxHeight/24),
                   child: GestureDetector(
-                    onTap: () => toForgotPassword,
+                    onTap: () => toForgotPassword(),
                     child: Text(
                       "Forgot password?",
                       style: GoogleFonts.montserrat(
@@ -238,7 +239,7 @@ class _LoginPagePageState extends State<LoginPage> {
 }
 
 void toForgotPassword(){
-
+  Get.to(const ForgotPasswordPage());
 }
 
 void toSignUp(){

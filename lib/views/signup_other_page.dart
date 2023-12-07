@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'forgot_password_page.dart';
 import 'login_page.dart';
 
 class SignupOtherPage extends StatefulWidget {
@@ -80,16 +81,19 @@ class _SignupOtherPageState extends State<SignupOtherPage> {
               margin: EdgeInsets.only(top: maxHeight/100, bottom: maxHeight/24),
               child: Align(
                 alignment: AlignmentDirectional.centerEnd,
-                child: Text(
-                  "Forgot password?",
-                  style: GoogleFonts.montserrat(
-                      textStyle: const TextStyle(
-                        fontStyle: FontStyle.italic,
-                        // fontWeight: FontWeight.bold,
-                        color: Colors.blue,
-                        fontSize: 16.0,
-                      )),
-                  textAlign: TextAlign.center,
+                child: GestureDetector(
+                  onTap: () => toForgotPassword(),
+                  child: Text(
+                    "Forgot password?",
+                    style: GoogleFonts.montserrat(
+                        textStyle: const TextStyle(
+                          fontStyle: FontStyle.italic,
+                          // fontWeight: FontWeight.bold,
+                          color: Colors.blue,
+                          fontSize: 16.0,
+                        )),
+                    textAlign: TextAlign.center,
+                  ),
                 ),
               ),
             ),
@@ -206,7 +210,7 @@ class _SignupOtherPageState extends State<SignupOtherPage> {
 }
 
 void toForgotPassword(){
-
+  Get.to(const ForgotPasswordPage());
 }
 
 void toSignIn(){

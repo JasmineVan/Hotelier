@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:hotelier/views/confirmation_otp_page.dart';
+import 'package:hotelier/views/forgot_password_page.dart';
 import 'package:hotelier/views/guide_1_page.dart';
 import 'package:hotelier/views/guide_2_page.dart';
 import 'package:hotelier/views/guide_3_page.dart';
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       title: "Hotelier",
-      home:  IntroPage(),
+      home:  ConfirmationOTPPage(),
       debugShowCheckedModeBanner: false,
     );
   }

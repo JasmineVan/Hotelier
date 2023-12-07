@@ -24,6 +24,10 @@ A Hotelier app is a specialized application designed to streamline and enhance t
 
 ![LoginPage](LoginPage.png)
 
+![ForgotPasswordPage](ForgotPasswordPage.png)
+
+![ConfirmationOTPPage](ConfirmationOTPPage.png)
+
 ## Features
 
 - 
