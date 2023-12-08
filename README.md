@@ -8,18 +8,17 @@ A Hotelier app is a specialized application designed to streamline and enhance t
 
 ## Screenshots
 
-<table>
-  <tr>
-    <td>Intro Page</td>
-     <td>Welcome Page</td>
-     <td>First Guide Page</td>
-  </tr>
-  <tr>
-    <td><img src="IntroPage.png" width=270 height=480></td>
-    <td><img src="WelcomePage.png" width=270 height=480></td>
-    <td><img src="Guide1Page.png></td>
-  </tr>
- </table>
+Intro Page | Welcome Page | Firat Guide Page
+--- | --- | ---
+![IntroPage](IntroPage.png) | ![WelcomePage](WelcomePage.png) | ![Guide1Page](Guide1Page.png)
+
+
+
+![Guide2Page](Guide2Page.png) ![Guide3Page](Guide3Page.png) ![SignupPage](SignupPage.png)
+
+![SignupOtherPage](SignupOtherPage.png) ![LoginPage](LoginPage.png) ![ForgotPasswordPage](ForgotPasswordPage.png)
+
+![ConfirmationOTPPage](ConfirmationOTPPage.png)
 
 
 ## Features
