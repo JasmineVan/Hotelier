@@ -5,6 +5,7 @@ import 'package:hotelier/views/forgot_password_page.dart';
 import 'package:hotelier/views/guide_1_page.dart';
 import 'package:hotelier/views/guide_2_page.dart';
 import 'package:hotelier/views/guide_3_page.dart';
+import 'package:hotelier/views/home_page.dart';
 import 'package:hotelier/views/intro_page.dart';
 import 'package:hotelier/views/login_page.dart';
 import 'package:hotelier/views/signup_other_page.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       title: "Hotelier",
-      home:  SignupPage(),
+      home:  HomePage(),
       debugShowCheckedModeBanner: false,
     );
   }
