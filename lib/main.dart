@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       title: "Hotelier",
-      home:  HomePage(),
+      home:  LoginPage(),
       debugShowCheckedModeBanner: false,
     );
   }

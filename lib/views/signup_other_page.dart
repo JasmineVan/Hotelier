@@ -2,6 +2,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hotelier/controllers/signup_other_controller.dart';
 
 import 'forgot_password_page.dart';
 import 'login_page.dart';
@@ -14,6 +15,8 @@ class SignupOtherPage extends StatefulWidget {
 }
 
 class _SignupOtherPageState extends State<SignupOtherPage> {
+  final controller = Get.put(SignupOtherController());
+
   @override
   Widget build(BuildContext context) {
     double maxWidth = MediaQuery.sizeOf(context).width;
@@ -42,6 +45,7 @@ class _SignupOtherPageState extends State<SignupOtherPage> {
               child: SizedBox(
                 width: maxWidth * 90/100,
                 child: TextField(
+                  controller: controller.emailTextEditingController,
                   decoration: InputDecoration(
                     prefixIcon: const Icon(Icons.email),
                     border: OutlineInputBorder(
@@ -61,6 +65,7 @@ class _SignupOtherPageState extends State<SignupOtherPage> {
             SizedBox(
               width: maxWidth * 90/100,
               child: TextField(
+                controller: controller.passwordTextEditingController,
                 decoration: InputDecoration(
                   prefixIcon: const Icon(Icons.lock),
                   border: OutlineInputBorder(
@@ -101,7 +106,7 @@ class _SignupOtherPageState extends State<SignupOtherPage> {
               width: maxWidth *2/3,
               height: maxHeight / 16,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => controller.signupHandle(),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.red,
                 ),
