@@ -28,7 +28,7 @@ class _Guild1PageState extends State<Guild1Page> {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(left: maxWidth / 20, right: maxWidth / 20),
+            margin: EdgeInsets.symmetric(horizontal: maxWidth / 20),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [

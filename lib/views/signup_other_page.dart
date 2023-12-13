@@ -24,7 +24,7 @@ class _SignupOtherPageState extends State<SignupOtherPage> {
 
     return Scaffold(
       body: Container(
-        margin: EdgeInsets.only(left: maxWidth / 20, right: maxWidth / 20),
+        margin: EdgeInsets.symmetric(horizontal: maxWidth / 20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -149,11 +149,11 @@ class _SignupOtherPageState extends State<SignupOtherPage> {
               ],
             ),
             Container(
-              margin: EdgeInsets.only(top: maxHeight/80, bottom: maxHeight/80),
+              margin: EdgeInsets.symmetric(vertical: maxHeight/80),
               child: Row(
                 children: [
                   Expanded(child: Container(
-                    margin: EdgeInsets.only(left: maxWidth/20, right: maxWidth/20),
+                      margin: EdgeInsets.symmetric(horizontal: maxWidth/20),
                       child: const Divider())),
                   Text(
                     "Or",
@@ -166,7 +166,7 @@ class _SignupOtherPageState extends State<SignupOtherPage> {
                     textAlign: TextAlign.center,
                   ),
                   Expanded(child: Container(
-                      margin: EdgeInsets.only(left: maxWidth/20, right: maxWidth/20),
+                      margin: EdgeInsets.symmetric(horizontal: maxWidth/20),
                       child: const Divider())),
                 ],
               ),

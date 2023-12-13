@@ -27,7 +27,7 @@ class _Guide2PageState extends State<Guide2Page> {
           opacity: 0.8,
         )),
         child: Container(
-          margin: EdgeInsets.only(left: maxWidth / 20, right: maxWidth / 20),
+          margin: EdgeInsets.symmetric(horizontal: maxWidth / 20),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [

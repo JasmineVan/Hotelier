@@ -20,7 +20,7 @@ class _LoginPageState extends State<SignupPage> {
 
     return Scaffold(
       body: Container(
-        margin: EdgeInsets.only(left: maxWidth / 20, right: maxWidth / 20),
+        margin: EdgeInsets.symmetric(horizontal: maxWidth/20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -104,7 +104,7 @@ class _LoginPageState extends State<SignupPage> {
 
             //  Continue with Apple
             Container(
-              margin: EdgeInsets.only(top: maxHeight/24, bottom: maxHeight/24),
+              margin: EdgeInsets.symmetric(vertical: maxHeight/24),
               padding: const EdgeInsets.all(8.0),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8.0),
@@ -181,11 +181,11 @@ class _LoginPageState extends State<SignupPage> {
               ],
             ),
             Container(
-              margin: EdgeInsets.only(top: maxHeight/80, bottom: maxHeight/80),
+              margin: EdgeInsets.symmetric(vertical: maxHeight/80),
               child: Row(
                 children: [
                   Expanded(child: Container(
-                      margin: EdgeInsets.only(left: maxWidth/20, right: maxWidth/20),
+                      margin: EdgeInsets.symmetric(horizontal: maxWidth/20),
                       child: const Divider())),
                   Text(
                     "Or",
@@ -198,7 +198,7 @@ class _LoginPageState extends State<SignupPage> {
                     textAlign: TextAlign.center,
                   ),
                   Expanded(child: Container(
-                      margin: EdgeInsets.only(left: maxWidth/20, right: maxWidth/20),
+                      margin: EdgeInsets.symmetric(horizontal: maxWidth/20),
                       child: const Divider())),
                 ],
               ),

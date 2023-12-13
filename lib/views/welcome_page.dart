@@ -28,7 +28,7 @@ class _WelcomePageState extends State<WelcomePage> {
             opacity: 0.7,
           )),
           child: Container(
-            margin: EdgeInsets.only(left: maxWidth / 20, right: maxWidth / 20),
+            margin: EdgeInsets.symmetric(horizontal: maxWidth/20),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.start,
