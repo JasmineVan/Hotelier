@@ -44,6 +44,7 @@ class _HomeFragmentState extends State<HomeFragment> with SingleTickerProviderSt
                 width: maxWidth * 90 / 100,
                 height: maxHeight * 1 / 10,
                 child: TextField(
+                  controller: controller.searchTextEditingController,
                   decoration: InputDecoration(
                     filled: true,
                     fillColor: Colors.grey.withOpacity(0.1),

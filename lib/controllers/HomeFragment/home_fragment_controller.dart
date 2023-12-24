@@ -1,7 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:hotelier/data/models/hotel.dart';
 
 class HomeFragmentController extends GetxController{
+
+  final searchTextEditingController = TextEditingController();
 
   List<String> dropdownValue = [
     'District 1',
