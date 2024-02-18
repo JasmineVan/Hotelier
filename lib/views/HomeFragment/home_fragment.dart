@@ -28,6 +28,16 @@ class _HomeFragmentState extends State<HomeFragment> with SingleTickerProviderSt
     double maxHeight = MediaQuery.sizeOf(context).height;
 
     return Scaffold(
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            UserAccountsDrawerHeader(
+                accountName: Text('Administrator'),
+                accountEmail: Text('admin@hotelier.com'),
+                currentAccountPicture: Image.network('https://ui-avatars.com/api/?name=AD')),
+          ],
+        ),
+      ),
       backgroundColor: Colors.transparent,
       body: SingleChildScrollView(
         child: Container(
